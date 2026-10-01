@@ -1,8 +1,224 @@
-/*
-Colors:
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+body {
+    font-family: Arial, sans-serif;
+}
 
-*/
+/* HEADER */
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+    background-color: white;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    border: 3px solid #20e820;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #1db954;
+}
+
+/* HERO */
+.hero {
+    height: 535px;
+
+    background-image: url("images/landing.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-text {
+    color: white;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* SPOTIFY SECTION */
+.spotify-section {
+    padding: 40px 30px 65px;
+    text-align: center;
+}
+
+.spotify-section h2 {
+    font-size: 26px;
+    display: inline-block;
+    border-bottom: 3px solid #1db954;
+    padding-bottom: 8px;
+    margin-bottom: 50px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+}
+
+.feature {
+    width: 30%;
+    max-width: 260px;
+    height: 215px;
+
+    border: 3px solid #eeee00;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.feature img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    color: #1db954;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.feature p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* GREEN SECTION */
+.green-section {
+    background-color: #2bb673;
+    min-height: 530px;
+    padding: 45px 10%;
+}
+
+.green-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.green-text {
+    color: white;
+    flex: 1;
+}
+
+.green-text h2 {
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.underline {
+    width: 330px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 35px;
+}
+
+.green-text h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.green-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+}
+
+.middle-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 120px;
+}
+
+.middle-logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.phone {
+    width: 230px;
+    flex-shrink: 0;
+}
+
+.phone img {
+    width: 100%;
+    display: block;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+    }
+
+    .green-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .underline {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
